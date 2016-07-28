@@ -1,0 +1,1 @@
+window.Templates.ThumbnailList = _.template( "" );

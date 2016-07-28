@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta property="og:image" content="http://boosetube.com/favicon.png" />
+<meta property="og:title" content="BooseTube" />
+<meta property="og:description"
+	content="Stupid images, videos, and more." />
+<meta property="og:url" content="http://boosetube.com" />
+<meta property="og:site_name" content="BooseTube" />
+<meta property="og:type" content="website" />
+
+<meta property="fb:admins" content="harterco" />
+
+<title>BooseTube</title>
+
+<link rel="apple-touch-icon" sizes="57x57"
+	href="img/favicon/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114"
+	href="img/favicon/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72"
+	href="img/favicon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144"
+	href="img/favicon/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60"
+	href="img/favicon/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120"
+	href="img/favicon/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76"
+	href="img/favicon/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152"
+	href="img/favicon/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="img/favicon/favicon-196x196.png"
+	sizes="196x196">
+<link rel="icon" type="image/png" href="img/favicon/favicon-160x160.png"
+	sizes="160x160">
+<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png"
+	sizes="96x96">
+<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png"
+	sizes="32x32">
+<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png"
+	sizes="16x16">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+<script type="text/javascript" src="scripts/vendor/jquery-1.10.2.min.js"></script>
+<script type="text/javascript"
+	src="scripts/vendor/underscore-1.5.2.min.js"></script>
+<script type="text/javascript"
+	src="scripts/vendor/backbone-1.1.0.min.js"></script>
+
+<link rel="stylesheet"
+	href="http://bootswatch.com/yeti/bootstrap.min.css">
+<script
+	src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="styles/vendor/mediaelementplayer.css">
+<script type="text/javascript"
+	src="scripts/vendor/mediaelement-and-player.min.js"></script>
+
+<link rel="stylesheet" href="styles/main.css">
+<script type="text/javascript" src="scripts/main.js"></script>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46474006-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+</head>
+<body>
+	<!-- facebook integration -->
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+  			var js, fjs = d.getElementsByTagName(s)[0];
+	  		if (d.getElementById(id)) return;
+	  		js = d.createElement(s); js.id = id;
+	  		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<!-- facebook integration end -->
+
+	<div class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="/" class="navbar-brand">BooseTube</a>
+			</div>
+			<div class="navbar-collapse collapse" id="navbar-main">
+				<ul id="searchControl" class="nav navbar-nav navbar-right">
+				</ul>
+
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div id="mainContent">
+		</div>
+	</div>
+
+	<div class="container">
+		<footer>
+			<div class="container-fluid">
+				<ul class="nav nav-pills pull-left">
+					<li><a class="about-link" href="/about.html">About</a></li>
+					<li><a class="contact-link" href="/contact.html">Contact</a></li>
+				</ul>
+				<ul class="nav nav-pills pull-right social-nav">
+					<li>© 2014 Arctic Studios LLC</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+	<script type="text/javascript">
+		// Backbone setup
+		window.App = {
+			Model : {},
+			Collection : {},
+			View : {},
+			Router : {}
+		};
+
+		window.Templates = {};
+	</script>
+	
+	<script type="text/javascript"
+		src="scripts/backbone/template/SearchControl.js"></script>
+	<script type="text/javascript" src="scripts/backbone/template/Detail.js"></script>
+	<script type="text/javascript" src="scripts/backbone/template/DetailImage.js"></script>
+	<script type="text/javascript" src="scripts/backbone/template/DetailVideo.js"></script>
+
+	<script type="text/javascript" src="scripts/backbone/model/Content.js"></script>
+	
+	<script type="text/javascript"
+		src="scripts/backbone/view/SearchControl.js"></script>
+	<script type="text/javascript" src="scripts/backbone/view/Detail.js"></script>
+	
+	<script type="text/javascript"
+		src="scripts/backbone/controller/DetailController.js"></script>
+	
+	<script type="text/javascript">
+		DetailController.init();
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('video,audio').mediaelementplayer();
+		});
+	</script>
+</body>
+</html>

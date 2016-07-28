@@ -1,0 +1,64 @@
+
+<style type="text/css">
+.sidecontentpullout {
+	background-color: Black;
+	color: White;
+	padding: 4px 3px;
+	-moz-border-radius-bottomleft: 1em;
+	-moz-border-radius-topleft: 1em;
+	-webkit-border-bottom-left-radius: 1em;
+	-webkit-border-top-left-radius: 1em;
+	border-bottom-left-radius: 1em;
+	border-top-left-radius: 1em;
+}
+
+.sidecontentpullout:hover {
+	background-color: #444444;
+	color: White;
+}
+
+.sidecontent {
+	background-color: Black;
+	color: White;
+	-moz-border-radius-bottomleft: 1em;
+	-webkit-border-bottom-left-radius: 1em;
+	border-bottom-left-radius: 1em;
+}
+
+.sidecontent>div>div {
+	padding-left: 10px;
+	padding-right: 40px;
+}
+</style>
+
+<div id="how">
+	<div class="side" title="Slide 1">
+		<h2>Side Content</h2>
+		<p>This is the side content that you want to de-clutter from your
+			page.</p>
+		<p>You can apply whatever CSS rules you like to this element, only
+			the position and behaviour will be changed by the plugin.</p>
+		<p>There are plenty of configurable settings if you want to change
+			the default behaviour!</p>
+	</div>
+	<div class="side" title="Slide 2">
+		<h2>More Content</h2>
+		<p>This is a different panel</p>
+		<p>This is the side content that you want to de-clutter from your
+			page.</p>
+		<p>You can apply whatever CSS rules you like to this element, only
+			the position and behaviour will be changed by the plugin.</p>
+		<p>There are plenty of configurable settings if you want to change
+			the default behaviour!</p>
+	</div>
+	<div class="side" title="Slide 3">
+		<h2>Another One</h2>
+		<p>This is a different panel</p>
+	</div>
+</div>
+
+<script type="text/javascript" src="private/js/jquery1.4.2.min.js"></script>
+<script type="text/javascript" src="private/js/jquery.sidecontent.js"></script>
+<script type="text/javascript">
+		$(".side").sidecontent();
+	</script>

@@ -1,0 +1,1 @@
+window.Templates.DetailImage = _.template("<img src=\"<%= filepath %>\" class=\"img-responsive\">");

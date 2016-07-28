@@ -1,0 +1,29 @@
+.row {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+#modalDescription {
+	margin: 10px 0;
+}
+
+.navbar {
+	border-radius: inherit;
+}
+
+p.thumbDescription {
+	margin: 0 0;
+}
+
+a.thumbAnchor {
+	margin-bottom: 10px;
+}
+
+input#txtSearch {
+	padding: 10px 15px;
+	margin-top: 5px;
+}
+
+p.detailDescription {
+	margin-bottom:21px;
+}

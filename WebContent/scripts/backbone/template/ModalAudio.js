@@ -1,0 +1,1 @@
+window.Templates.ModalAudio = _.template("<audio src=\"<%= filepath %>\"><p>Your browser does not support the audio element.</p></audio><p id=\"modalDescription\"><%=description%></p>");

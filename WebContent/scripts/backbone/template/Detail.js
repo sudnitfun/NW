@@ -1,0 +1,1 @@
+window.Templates.Detail = _.template("<h1><%= title %></h1><p class=\"detailDescription\"><%= description %></p><div id=\"detailItem\" class=\"col-md-6 column\"></div><div class=\"col-md-6 column\"><div class=\"fb-comments\" data-href=\"<%=url%>\" data-numposts=\"5\" data-colorscheme=\"light\"></div></div>");
