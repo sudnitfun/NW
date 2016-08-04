@@ -68,5 +68,10 @@
 			<artifactId>jmf</artifactId>
 			<version>2.1.1e</version>
 		</dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.4-1206-jdbc42</version>
+		</dependency>
 	</dependencies>
 </project>
