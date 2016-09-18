@@ -6874,6 +6874,7 @@ body.coming-soon-full {
 
 .carousel-inner {
 	min-height: 300px;
+	height: 500px;
 }
 
 .carousel-text {
@@ -7086,3 +7087,4 @@ section {
 	line-height: 1.33;
 	border-radius: 35px;
 }
+
