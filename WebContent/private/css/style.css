@@ -3225,7 +3225,7 @@ ul.post-desc li+li {
 
 /****fun facts*****/
 .fun-fact-wrap {
-	background: url(../img/texture_1.jpeg);
+	background: url(../img/texture_2.jpg);
 	background-repeat: repeat !important;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -6884,7 +6884,7 @@ body.coming-soon-full {
 	height: 200px !important;
 	color: #ffffff;
 	font-size: 16px;
-	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-family: Palatino, "Palatino Linotype";
 }
 
 .itemnew p {
