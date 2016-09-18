@@ -2148,19 +2148,19 @@
             }).appendTo(t.navigation);
 
             // next
-            t.nextButton = $('<div/>', {
+            /*t.nextButton = $('<div/>', {
                 'class': 'cbp-popup-next',
                 'title': 'Next (Right arrow key)',
                 'data-action': 'next'
-            }).appendTo(t.navigation);
+            }).appendTo(t.navigation);*/
 
 
             // prev
-            t.prevButton = $('<div/>', {
+            /*t.prevButton = $('<div/>', {
                 'class': 'cbp-popup-prev',
                 'title': 'Previous (Left arrow key)',
                 'data-action': 'prev'
-            }).appendTo(t.navigation);
+            }).appendTo(t.navigation);*/
 
 
             if (t.type === 'singlePage') {
@@ -2404,12 +2404,12 @@
             t.counterTotal = t.dataArray.length;
 
             if (t.counterTotal === 1) {
-                t.nextButton.hide();
-                t.prevButton.hide();
+                //t.nextButton.hide();
+                //t.prevButton.hide();
                 t.dataActionImg = '';
             } else {
-                t.nextButton.show();
-                t.prevButton.show();
+                //t.nextButton.show();
+                //t.prevButton.show();
                 t.dataActionImg = 'data-action="next"';
             }
 
@@ -2492,11 +2492,11 @@
             t.counterTotal = t.dataArray.length;
 
             if (t.counterTotal === 1) {
-                t.nextButton.hide();
-                t.prevButton.hide();
+                //t.nextButton.hide();
+                //t.prevButton.hide();
             } else {
-                t.nextButton.show();
-                t.prevButton.show();
+                //t.nextButton.show();
+                //t.prevButton.show();
             }
 
             // append to body
