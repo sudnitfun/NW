@@ -7058,9 +7058,6 @@ section {
 }
 
 /*Bootstrape circular Button*/
-body {
-	margin: 40px;
-}
 
 .btn-circle {
 	width: 30px;
